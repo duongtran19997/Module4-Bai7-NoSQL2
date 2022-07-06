@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8ea90ad-01b1-46ac-a7bf-f7f824b1a5db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/book.router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schema/author.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schema/book.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schema/publisher.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/create.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/listBook.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../[Thuc-hanh]-Ung-dung-quan-ly-sach---Bo-sung-thong-tin-keyword-(Embeded-data)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../[Thuc-hanh]-Ung-dung-quan-ly-sach---Bo-sung-thong-tin-keyword-(Embeded-data)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../[Thuc-hanh]-Ung-dung-quan-ly-sach---Bo-sung-thong-tin-tac-gia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../[Thuc-hanh]-Ung-dung-quan-ly-sach---Bo-sung-thong-tin-tac-gia/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../[Thuc-hanh]-Ung-dung-quan-ly-sach---Tim-sach-theo-key-word/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../[Thuc-hanh]-Ung-dung-quan-ly-sach---Tim-sach-theo-key-word/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/router/book.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/router/book.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/router/book.router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/router/book.router.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/book.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/book.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/listBook.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/listBook.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657090410582</updated>
-      <workItem from="1657090412046" duration="5855000" />
+      <workItem from="1657090412046" duration="9057000" />
     </task>
     <servers />
   </component>

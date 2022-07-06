@@ -4,17 +4,18 @@ import multer from 'multer';
 import {book} from "../schema/book.model";
 import {author} from "../schema/author.model";
 import {publisher} from "../schema/publisher.model";
+
 const upload = multer();
 const router = express.Router();
 
-router.get('/create',upload.none(), (req, res) => {
+router.get('/create', upload.none(), (req, res) => {
     res.render('create')
 });
 
-router.post('/create',upload.none(), async(req, res) => {
-    const Author = new author({name:req.body.author});
-    const Publisher = new publisher({name:req.body.publisher});
-    const Book =new book ({
+router.post('/create', upload.none(), async (req, res) => {
+    const Author = new author({name: req.body.author});
+    const Publisher = new publisher({name: req.body.publisher});
+    const Book = new book({
         name: req.body.name,
         author: Author._id,
         publisher: Publisher._id
@@ -27,9 +28,20 @@ router.post('/create',upload.none(), async(req, res) => {
 });
 
 
-router.get('/list',upload.none(),async(req, res) => {
-    const listBook = await book.find().populate('author','name').populate('publisher','name')
+router.get('/list', upload.none(), async (req, res) => {
+    let query = {};
+    if (req.query.author) {
+        let authorFind = req.query.author || "";
+
+        let Author = await author.findOne({name: {$regex: authorFind}})
+
+        query = {
+            author: Author
+        }
+    }
+    const listBook = await book.find(query).populate('author', 'name').populate('publisher', 'name')
     res.render('listBook', {listBook: listBook});
-})
+});
+
 
 export {router};

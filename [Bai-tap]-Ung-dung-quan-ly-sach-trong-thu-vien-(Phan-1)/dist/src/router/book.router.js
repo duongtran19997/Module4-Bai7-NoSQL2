@@ -29,7 +29,15 @@ router.post('/create', upload.none(), async (req, res) => {
     res.json('success');
 });
 router.get('/list', upload.none(), async (req, res) => {
-    const listBook = await book_model_1.book.find().populate('author', 'name').populate('publisher', 'name');
+    let query = {};
+    if (req.query.author) {
+        let authorFind = req.query.author || "";
+        let Author = await author_model_1.author.findOne({ name: { $regex: authorFind } });
+        query = {
+            author: Author
+        };
+    }
+    const listBook = await book_model_1.book.find(query).populate('author', 'name').populate('publisher', 'name');
     res.render('listBook', { listBook: listBook });
 });
 //# sourceMappingURL=book.router.js.map
